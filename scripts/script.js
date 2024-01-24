@@ -76,12 +76,13 @@ async function getSeries() {
                         }
 
                         location.reload()
+
                     } catch (error) {
                         console.log(error);
                     }
                 }
             }
-        })
+        });
 
         const tdDelete = document.createElement('img')
         tdDelete.src = './assets/icons/mdi_trash.svg'
@@ -103,6 +104,7 @@ async function getSeries() {
                     }
 
                     location.reload()
+
                 } catch (error) {
                     console.log(`deu ruim na requisição ${error}`);
                 }
